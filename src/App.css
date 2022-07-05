@@ -28,3 +28,13 @@ html, body {
 .logo {
   height: 50px;
 }
+/* 
+.contenedorDelContador {
+  height: 550px;
+  min-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+} */

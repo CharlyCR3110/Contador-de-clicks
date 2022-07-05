@@ -2,16 +2,20 @@ import './App.css';
 import Contador from './components/Contador';
 import Boton from'./components/Boton.js'
 import logo from './img/Counter.png'
-
+import { useState } from 'react';
 
 function App() {
+
+  const [numeroDeClicks, setNumClicks] = useState(0)
+
   const manejarClick = () => {
     console.log('Click');
-    
+    setNumClicks(numeroDeClicks + 1);
   }
 
   const reinicarContador = () => {
     console.log('Reiniciar')
+    setNumClicks(0);
   }
 
   return (
@@ -24,7 +28,7 @@ function App() {
           />
       </div>
       <div className='contenedorDelContador'>
-        <Contador numeroDeClicks='4' />
+        <Contador numeroDeClicks={numeroDeClicks} />
         <Boton 
           texto='Click'
           esBotonDeClick={ true }
