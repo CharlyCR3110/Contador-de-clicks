@@ -1,4 +1,5 @@
 import './App.css';
+import Contador from './components/Contador';
 import Boton from'./components/Boton.js'
 import logo from './img/Counter.png'
 
@@ -23,6 +24,7 @@ function App() {
           />
       </div>
       <div className='contenedorDelContador'>
+        <Contador numeroDeClicks='4' />
         <Boton 
           texto='Click'
           esBotonDeClick={ true }
