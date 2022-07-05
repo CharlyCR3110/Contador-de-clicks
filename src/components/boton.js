@@ -1,4 +1,6 @@
 import React from 'react';
+import '../stylesheets/Boton.css';
+
 
 const Boton = ({ texto, esBotonDeClick, manejarClick }) => {
   return (

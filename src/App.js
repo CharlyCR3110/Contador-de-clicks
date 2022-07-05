@@ -1,8 +1,18 @@
 import './App.css';
-import logo from './img/freecodecamp-logo.png';
+import Boton from'./components/Boton.js'
+import logo from './img/Counter.png'
 
 
 function App() {
+  const manejarClick = () => {
+    console.log('Click');
+    
+  }
+
+  const reinicarContador = () => {
+    console.log('Reiniciar')
+  }
+
   return (
     <div className='App'>
       <div className='logoContenedor'>
@@ -15,13 +25,13 @@ function App() {
       <div className='contenedorDelContador'>
         <Boton 
           texto='Click'
-          esBotonDeClick={true}
-          manejarClick={}
+          esBotonDeClick={ true }
+          manejarClick={ manejarClick }
         />
         <Boton 
           texto='Reiniciar'
-          esBotonDeClick={false}
-          manejarClick={}
+          esBotonDeClick={ false }
+          manejarClick={ reinicarContador }
         />
       </div>
     </div>
